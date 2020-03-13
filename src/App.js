@@ -205,7 +205,46 @@ class App extends Component {
                   />
                 </Route>
                 <Route path="/projects" exact>
-                  <ProjectsPage />
+                  <ProjectsPage
+                    projects={[
+                      {
+                        pName: "Interactive Chess",
+                        image:
+                          "https://www.ibm.com/ibm/history/exhibits/vintage/images/overlay/4506VV1001.jpg",
+                        description:
+                          "This project started as an interactive Tic Tac Toe game using the MiniMax algorithm of John Von Neumann's Game Theory. This project slowly transformed into an interactive chess game, and now uses the Alpha-Beta Algorithm for increased efficiency. ",
+                        technologies:
+                          "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu"
+                      },
+                      {
+                        pName: "Beer-30",
+                        image:
+                          "https://www.brokenarrowbrewingco.com/wp-content/uploads/2019/04/beers.png",
+                        description:
+                          "An app whos use is to find local breweries",
+                        technologies:
+                          "ReactJS, Yelp CORS API's, Axios, Font-Awesome, React-Spinners, React-Router-DOM, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API"
+                      },
+                      {
+                        pName: "React Ecommerce",
+                        image:
+                          "https://aama-media.s3.amazonaws.com/67ae0390-4186-11e7-b696-89615ef9b738.thumb.png",
+                        description:
+                          "Small e-commerce web application dealing specifically in furniture, and art",
+                        technologies:
+                          "React, Strapi headless CMS, MongoDB, GraphQL, SendGrid, Gestalt(Pinterest Library), API's, and MVC."
+                      },
+                      {
+                        pName: "People and Places",
+                        image:
+                          "https://cdn2.iconfinder.com/data/icons/communication-language/100/like_bubble-01-256.png",
+                        description:
+                          "[Currently building] A CRUD social media application, where users favorite locations can displayed to other users in both description by way of Google Maps. ",
+                        technologies:
+                          "ReactJS, NodeJS, Express, MongoDB, React-Transition-Group."
+                      }
+                    ]}
+                  />
                 </Route>
                 <Redirect to="/" />
               </Switch>
