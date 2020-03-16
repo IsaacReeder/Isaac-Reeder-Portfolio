@@ -209,39 +209,34 @@ class App extends Component {
                     projects={[
                       {
                         pName: "Interactive Chess",
-                        image:
-                          "https://www.ibm.com/ibm/history/exhibits/vintage/images/overlay/4506VV1001.jpg",
+                        image: require("../src/assets/deep_blue.jpg"),
                         description:
-                          "This project started as an interactive Tic Tac Toe game using the MiniMax algorithm of John Von Neumann's Game Theory. This project slowly transformed into an interactive chess game, and now uses the Alpha-Beta Algorithm for increased efficiency. ",
+                          "AI interactive chess game, utilizing the Alpha-Beta Algorithm for increased efficiency. ",
                         technologies:
                           "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu"
                       },
                       {
                         pName: "Beer-30",
-                        image:
-                          "https://www.brokenarrowbrewingco.com/wp-content/uploads/2019/04/beers.png",
+                        image: require("../src/assets/beer.png"),
                         description:
-                          "An app whos use is to find local breweries",
+                          "This app helps the user find local breweries",
                         technologies:
-                          "ReactJS, Yelp CORS API's, Axios, Font-Awesome, React-Spinners, React-Router-DOM, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API"
+                          "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API"
                       },
                       {
                         pName: "React Ecommerce",
-                        image:
-                          "https://aama-media.s3.amazonaws.com/67ae0390-4186-11e7-b696-89615ef9b738.thumb.png",
+                        image: require("../src/assets/cart.jpeg"),
                         description:
-                          "Small e-commerce web application dealing specifically in furniture, and art",
+                          "E-commerce web application for furniture, and art",
                         technologies:
                           "React, Strapi headless CMS, MongoDB, GraphQL, SendGrid, Gestalt(Pinterest Library), API's, and MVC."
                       },
                       {
                         pName: "People and Places",
-                        image:
-                          "https://cdn2.iconfinder.com/data/icons/communication-language/100/like_bubble-01-256.png",
+                        image: require("../src/assets/thumbsup.png"),
                         description:
                           "[Currently building] A CRUD social media application, where users favorite locations can displayed to other users in both description by way of Google Maps. ",
-                        technologies:
-                          "ReactJS, NodeJS, Express, MongoDB, React-Transition-Group."
+                        technologies: "ReactJS, NodeJS, Express, MongoDB."
                       }
                     ]}
                   />

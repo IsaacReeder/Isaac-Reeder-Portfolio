@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./ProjectsPage.scss";
+import "../LandingPage/LandingPage.scss";
 import { CSSTransition } from "react-transition-group";
 
 export default class ProjectsPage extends Component {
