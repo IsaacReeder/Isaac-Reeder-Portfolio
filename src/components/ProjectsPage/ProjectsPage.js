@@ -7,7 +7,7 @@ export default class ProjectsPage extends Component {
   render() {
     const { projects } = this.props;
     return (
-      <div>
+      <div className="container">
         <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
           <div className="projects">
             {projects.map(project => (
@@ -17,11 +17,11 @@ export default class ProjectsPage extends Component {
                   <h1 target="_blank" rel="noopener noreferrer">
                     {`${project.pName}`}
                   </h1>
-                  <img
+                  {/* <img
                     className="image"
                     alt="pic"
                     src={`${project.image}`}
-                  ></img>
+                  ></img> */}
                   <h5>{`${project.description}`}</h5>
                   <h6>{`${project.technologies}`}</h6>
                 </div>

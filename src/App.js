@@ -235,7 +235,7 @@ class App extends Component {
                         pName: "People and Places",
                         image: require("../src/assets/thumbsup.png"),
                         description:
-                          "[Currently building] A CRUD social media application, where users favorite locations can displayed to other users in both description by way of Google Maps. ",
+                          "A CRUD social media application, built with the MERN stack",
                         technologies: "ReactJS, NodeJS, Express, MongoDB."
                       }
                     ]}
