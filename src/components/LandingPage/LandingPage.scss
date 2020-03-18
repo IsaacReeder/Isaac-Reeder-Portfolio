@@ -85,10 +85,6 @@
 }
 .daylight .card {
   flex: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 10rem;
-  grid-gap: 1em;
   margin: 1rem;
   border: 3px #f3f3f3 solid;
   border-radius: 1%;
@@ -96,9 +92,11 @@
   transition: all 0.3s linear;
   cursor: pointer;
   background-color: #a8a4a4;
-  text-align: center;
+  text-align: left;
   padding: 0.5rem;
-  min-height: 13rem;
+  min-height: 30%;
+  max-height: 90%;
+  min-width: auto;
 }
 
 .daylight .card:hover {
@@ -129,10 +127,7 @@
 }
 
 .nightlight .card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 10rem;
-  grid-gap: 1em;
+  flex: 1;
   margin: 1rem;
   border: 3px #f3f3f3 solid;
   border-radius: 1%;
@@ -140,7 +135,11 @@
   transition: all 0.3s linear;
   cursor: pointer;
   background-color: #e2dada;
-  text-align: center;
+  text-align: left;
+  padding: 0.5rem;
+  min-height: 30%;
+  max-height: 90%;
+  min-width: auto;
 }
 
 .nightlight .card:hover {

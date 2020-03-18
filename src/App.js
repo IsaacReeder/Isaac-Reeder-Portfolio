@@ -213,7 +213,9 @@ class App extends Component {
                         description:
                           "AI interactive chess game, utilizing the Alpha-Beta Algorithm for increased efficiency. ",
                         technologies:
-                          "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu"
+                          "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu",
+                        image2: "fa-github",
+                        url: "https://github.com/IsaacReeder/FunctionalChess"
                       },
                       {
                         pName: "Beer-30",
@@ -221,7 +223,9 @@ class App extends Component {
                         description:
                           "This app helps the user find local breweries",
                         technologies:
-                          "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API"
+                          "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
+                        image2: "fa-github",
+                        url: "https://github.com/IsaacReeder/Beer-30"
                       },
                       {
                         pName: "React Ecommerce",
@@ -229,14 +233,19 @@ class App extends Component {
                         description:
                           "E-commerce web application for furniture, and art",
                         technologies:
-                          "React, Strapi headless CMS, MongoDB, GraphQL, SendGrid, Gestalt(Pinterest Library), API's, and MVC."
+                          "React, Strapi headless CMS, MongoDB, GraphQL, SendGrid, Gestalt(Pinterest Library), API's, and MVC.",
+                        image2: "fa-github",
+                        url:
+                          "https://github.com/IsaacReeder/React-Strapi-MongoDB-Ecommerce-v2"
                       },
                       {
                         pName: "People and Places",
                         image: require("../src/assets/thumbsup.png"),
                         description:
                           "A CRUD social media application, built with the MERN stack",
-                        technologies: "ReactJS, NodeJS, Express, MongoDB."
+                        technologies: "ReactJS, NodeJS, Express, MongoDB.",
+                        image2: "fa-github",
+                        url: "https://github.com/IsaacReeder/people-and-places"
                       }
                     ]}
                   />
