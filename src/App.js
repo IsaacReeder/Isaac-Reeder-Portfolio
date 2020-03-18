@@ -189,8 +189,9 @@ class App extends Component {
                 <Route path="/" exact>
                   <LandingPage
                     devIntro="Hi, I'm Isaac Reeder"
+                    jobTitle="Full-Stack Software Developer"
                     plainBackgroundMode="daylight"
-                    devDesc="JavaScript | ReactJS |  MongoDB | API's "
+                    devDesc="JavaScript | MERN | API's "
                     gradientColors="#EE7752, #E73C7E, #23A6D5, #23D5AB"
                     icons={[
                       {

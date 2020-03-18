@@ -11,6 +11,7 @@ export default class LandingPage extends Component {
       backgroundMode,
       devIntro,
       devDesc,
+      jobTitle,
       icons
     } = this.props;
 
@@ -22,6 +23,7 @@ export default class LandingPage extends Component {
         >
           <main className="App-main">
             <h1 className="intro">{devIntro}</h1>
+            <h2> {jobTitle}</h2>
             <div className="tagline">
               <Typist>{devDesc}</Typist>
             </div>
