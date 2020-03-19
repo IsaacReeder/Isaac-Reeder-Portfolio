@@ -222,7 +222,7 @@ class App extends Component {
                         pName: "Beer-30",
                         image: require("../src/assets/beer.png"),
                         description:
-                          "This app helps the user find local breweries",
+                          "This app helps the user find local breweries.",
                         technologies:
                           "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
                         image2: "fa-github",
@@ -232,7 +232,7 @@ class App extends Component {
                         pName: "React Ecommerce",
                         image: require("../src/assets/cart.jpeg"),
                         description:
-                          "E-commerce web application for furniture, and art",
+                          "E-commerce web application for furniture, and art.",
                         technologies:
                           "React, Strapi headless CMS, MongoDB, GraphQL, SendGrid, Gestalt(Pinterest Library), API's, and MVC.",
                         image2: "fa-github",
@@ -243,7 +243,7 @@ class App extends Component {
                         pName: "People and Places",
                         image: require("../src/assets/thumbsup.png"),
                         description:
-                          "A CRUD social media application, built with the MERN stack",
+                          "A CRUD social media application, built with the MERN stack.",
                         technologies: "ReactJS, NodeJS, Express, MongoDB.",
                         image2: "fa-github",
                         url: "https://github.com/IsaacReeder/people-and-places"

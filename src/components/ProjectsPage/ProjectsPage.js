@@ -7,7 +7,13 @@ export default class ProjectsPage extends Component {
   render() {
     const { projects } = this.props;
     return (
-      <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
+      <CSSTransition
+        in={true}
+        out={true}
+        appear={true}
+        timeout={1000}
+        classNames="fade"
+      >
         <div className="projects">
           {projects.map(project => (
             <Fragment>

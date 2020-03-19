@@ -38,6 +38,10 @@
   font-size: 2em;
 }
 
+.redirect {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 14px;
@@ -101,7 +105,7 @@
 
 .daylight .card:hover {
   background-color: rgb(133, 182, 194);
-  border-color: #f3f3f3;
+  border-color: #070707;
 }
 
 /* Nightlight CSS */
@@ -129,7 +133,7 @@
 .nightlight .card {
   flex: 1;
   margin: 1rem;
-  border: 3px #f3f3f3 solid;
+  border: 3px #030000 solid;
   border-radius: 1%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 0.3s linear;
