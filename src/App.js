@@ -9,6 +9,7 @@ import {
 
 import LandingPage from "./components/LandingPage/LandingPage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
+import Nav from "./components/Nav/Nav";
 
 class App extends Component {
   constructor(props) {
@@ -185,11 +186,12 @@ class App extends Component {
         >
           <main className="App-main">
             <Router>
+              <Nav />
               <Switch>
                 <Route path="/" exact>
                   <LandingPage
                     devIntro="Hi, I'm Isaac Reeder"
-                    jobTitle="Full-Stack Software Developer"
+                    jobTitle="Software Developer"
                     plainBackgroundMode="daylight"
                     devDesc="JavaScript | MERN | API's "
                     gradientColors="#EE7752, #E73C7E, #23A6D5, #23D5AB"

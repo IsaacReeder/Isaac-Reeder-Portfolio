@@ -1,0 +1,54 @@
+.Container {
+  position: fixed;
+  top: 6%;
+  left: 3%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  z-index: 1000;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1500px) {
+  .Container {
+    left: 4%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Container {
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Container {
+    top: 4%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Container {
+    top: 3%;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Container {
+    top: 2%;
+    left: 5%;
+  }
+  .smiley {
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Container {
+    top: 2%;
+    left: 6%;
+  }
+}

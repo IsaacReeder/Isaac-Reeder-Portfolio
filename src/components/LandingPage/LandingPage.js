@@ -74,7 +74,7 @@ export default class LandingPage extends Component {
               <StyleRoot>
                 <div className="redirect" style={styles.flash}>
                   {this.renderRedirect()}
-                  <h4 onClick={this.setRedirect}>My Work</h4>
+                  <h4 onClick={this.setRedirect}>Projects</h4>
                 </div>
               </StyleRoot>
             </main>
