@@ -45,22 +45,6 @@ class App extends Component {
     };
   }
 
-  componentWillMount = () => {
-    if (this.checkIfPlainTypeEnabled()) {
-      return true;
-    } else if (this.checkIfGradientTypeEnabled()) {
-      this.setState({
-        appClass: "gradient",
-        bgStyle: this.prepareGradientStyleSheets()
-      });
-    } else if (this.checkIfImageTypeEnabled()) {
-      this.setState({
-        appClass: "full-bg-image",
-        bgStyle: this.prepareBackgroundImageStyle()
-      });
-    }
-  };
-
   checkIfNightModeEnabled = () => {
     return (
       this.state.backgroundType === "plain" &&
@@ -73,52 +57,6 @@ class App extends Component {
       this.state.backgroundType === "plain" &&
       this.state.appClass === "daylight"
     );
-  };
-
-  checkIfGradientTypeEnabled = () => {
-    return this.state.backgroundType === "gradient";
-  };
-
-  checkIfPlainTypeEnabled = () => {
-    return this.state.backgroundType === "plain";
-  };
-
-  checkIfImageTypeEnabled = () => {
-    return this.state.backgroundType === "image";
-  };
-
-  prepareGradientStyleSheets = () => {
-    if (this.props.gradientColors) {
-      return {
-        background:
-          "linear-gradient(-45deg, " + this.props.gradientColors + ")",
-        backgroundSize: "400% 400%"
-      };
-    } else {
-      return {
-        background:
-          "linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)",
-        backgroundSize: "400% 400%"
-      };
-    }
-  };
-
-  prepareBackgroundImageStyle = () => {
-    if (this.props.backgroundImageUrl) {
-      return {
-        background:
-          'url("' +
-          this.props.backgroundImageUrl +
-          '") no-repeat center center fixed',
-        backgroundSize: "cover"
-      };
-    } else {
-      return {
-        background:
-          'url("/images/sample-background.jpg") no-repeat center center fixed',
-        backgroundSize: "cover"
-      };
-    }
   };
 
   getDefaultModeBasedOnBackgroundType = () => {
@@ -182,15 +120,17 @@ class App extends Component {
         <div className="change-mode" onClick={this.changeThemeMode} />
         <div
           className={backgroundMode}
-          onClick={this.changeBackgroundBasedonMode}
+          // onClick={this.changeBackgroundBasedonMode}
         >
           <main className="App-main">
             <Router>
-              <Nav />
+              <Nav
+                changeBackgroundBasedonMode={this.changeBackgroundBasedonMode}
+              />
               <Switch>
                 <Route path="/" exact>
                   <LandingPage
-                    devIntro="Hi, I'm Isaac Reeder"
+                    devIntro="Hi, I'm Isaac Reeder "
                     jobTitle="Software Developer"
                     plainBackgroundMode="daylight"
                     devDesc="JavaScript | MERN | API's "
