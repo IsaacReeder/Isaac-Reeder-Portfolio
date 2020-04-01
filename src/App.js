@@ -118,10 +118,7 @@ class App extends Component {
     return (
       <div className={appClass} style={bgStyle}>
         <div className="change-mode" onClick={this.changeThemeMode} />
-        <div
-          className={backgroundMode}
-          // onClick={this.changeBackgroundBasedonMode}
-        >
+        <div className={backgroundMode}>
           <main className="App-main">
             <Router>
               <Nav
