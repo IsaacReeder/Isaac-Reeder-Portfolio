@@ -3,15 +3,15 @@ import Typist from "react-typist";
 import "./LandingPage.scss";
 import { Redirect } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-import { flash } from "react-animations";
-import Radium, { StyleRoot } from "radium";
+// import { flash } from "react-animations";
+// import Radium, { StyleRoot } from "radium";
 
-const styles = {
-  flash: {
-    animation: "1s 3s",
-    animationName: Radium.keyframes(flash, "flash")
-  }
-};
+// const styles = {
+//   flash: {
+//     animation: "1s 3s",
+//     animationName: Radium.keyframes(flash, "flash")
+//   }
+// };
 
 export default class LandingPage extends Component {
   state = {
@@ -71,12 +71,6 @@ export default class LandingPage extends Component {
                   </a>
                 ))}
               </div>
-              <StyleRoot>
-                <div className="redirect" style={styles.flash}>
-                  {this.renderRedirect()}
-                  <h4 onClick={this.setRedirect}>Projects</h4>
-                </div>
-              </StyleRoot>
             </main>
           </div>
         </div>
