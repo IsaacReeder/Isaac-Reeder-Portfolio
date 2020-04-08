@@ -22,6 +22,7 @@
 
 .lines {
   padding: 5rem;
+  padding-bottom: 15rem;
 }
 
 // .spacer {
@@ -58,15 +59,15 @@
 .words {
   width: 21rem;
   padding-bottom: 3rem;
-  // padding-left: 3rem;
+  padding-left: 0.6rem;
   // text-align: center;
   // font-size: 100px;
-  text-align: right;
+  text-align: left;
 }
 
 .wordSpacer {
   margin-left: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0.2rem;
 
   // word-spacing: 2rem;
 }

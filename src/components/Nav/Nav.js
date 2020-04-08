@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { CSSTransition } from "react-transition-group";
-import { Link, animateScroll as scroll } from "react-scroll";
-import "./Nav.css";
+import { Link } from "react-scroll";
+import "./Nav.scss";
 
 class Nav extends React.Component {
   render() {
     var changeBackgroundBasedonMode = this.props.changeBackgroundBasedonMode;
+
     return (
       <CSSTransition
         in={true}
@@ -44,7 +45,7 @@ class Nav extends React.Component {
               offset={-70}
               duration={1500}
             >
-              Contact me
+              Contact
             </Link>
           </div>
         </React.Fragment>

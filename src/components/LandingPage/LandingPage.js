@@ -35,7 +35,6 @@ export default class LandingPage extends Component {
       appClass,
       bgStyle,
       backgroundMode,
-      devIntro,
       devDesc,
       jobTitle,
       icons
@@ -56,8 +55,8 @@ export default class LandingPage extends Component {
           >
             <main className="App-main">
               <div className="organizer">
-                <h1 className="intro">{devIntro}</h1>
-                <h2 className="jobTitle"> {jobTitle}</h2>
+                {/* <h1 className="intro">{devIntro}</h1> */}
+                <h1 className="jobTitle"> {jobTitle}</h1>
                 <div className="tagline">
                   <Typist>{devDesc}</Typist>
                 </div>

@@ -1,7 +1,7 @@
 .Container {
   position: fixed;
   top: 6%;
-  left: 3%;
+  left: 47%;
   height: 4rem;
   width: 4rem;
   display: flex;
@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
 }
 .Container2 {
-  position: fixed;
+  position: absolute;
   top: 6%;
   left: 10rem;
   height: 4rem;
@@ -22,19 +22,28 @@
   z-index: 1000;
   background-repeat: no-repeat;
   cursor: pointer;
+  &:hover {
+    letter-spacing: 1.5px;
+    transition: letter-spacing 0.25s ease-in;
+    // transition: letter-spacing 0.25s ease-out;
+  }
 }
 .Container3 {
-  position: fixed;
+  position: absolute;
   top: 6%;
-  left: 20rem;
+  left: 18rem;
   height: 4rem;
-  width: 7.5rem;
+  width: 8.5rem;
   display: flex;
   flex-direction: column;
   cursor: default;
   z-index: 1000;
   background-repeat: no-repeat;
   cursor: pointer;
+  &:hover {
+    letter-spacing: 1.5px;
+    transition: letter-spacing 0.25s ease-in;
+  }
 }
 
 @media only screen and (max-width: 1500px) {

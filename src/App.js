@@ -140,7 +140,7 @@ class App extends Component {
 
             <LandingPage
               devIntro="Hi, I'm Isaac Reeder "
-              jobTitle="Software Developer"
+              jobTitle="Hi, I'm Isaac Reeder. A tenacious self-taught software developer, I use continuous iteration to produce results quickly and consistently."
               plainBackgroundMode="daylight"
               devDesc="ReactJS | JavaScript | MERN | API's "
               gradientColors="#EE7752, #E73C7E, #23A6D5, #23D5AB"
@@ -203,8 +203,8 @@ class App extends Component {
             <Contact
               lines={[
                 {
-                  contactLines: "Let's make something amazing!",
-                  emailAddy: "I.Reeder@Protonmail.ch"
+                  contactLines: "Let's make something amazing.",
+                  emailAddy: "i.reeder@protonmail.ch"
                 }
               ]}
             />
