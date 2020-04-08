@@ -21,18 +21,20 @@
   cursor: default;
   z-index: 1000;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .Container3 {
   position: fixed;
   top: 6%;
   left: 20rem;
   height: 4rem;
-  width: 4rem;
+  width: 7.5rem;
   display: flex;
   flex-direction: column;
   cursor: default;
   z-index: 1000;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1500px) {

@@ -6,10 +6,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   font-family: "Open Sans" sans-serif;
+}
+
+.organizer {
+  padding-left: 15rem;
 }
 
 .tagline {
@@ -28,6 +32,10 @@
   margin-right: 0.5em;
 }
 
+.jobTitle {
+  padding-left: 2.1rem;
+}
+
 .change-mode {
   position: absolute;
   top: 25px;
@@ -37,6 +45,7 @@
 .icons-social i {
   padding: 10px;
   font-size: 2em;
+  padding-left: 2.1rem;
 }
 
 .redirect {
@@ -104,6 +113,7 @@
   min-width: auto;
   font-family: "Open Sans" sans-serif;
   margin-bottom: 9rem;
+  margin-top: 9rem;
 }
 
 .daylight .card:hover {
@@ -124,6 +134,7 @@
   background-repeat: no-repeat;
   animation: App-Logo-Spin infinite 3s linear;
 }
+
 /* Nightlight CSS */
 
 .nightlight .App-main {
@@ -179,6 +190,20 @@
   background: url("../../assets/IR-smiley-black.svg");
   background-repeat: no-repeat;
   animation: App-Logo-Spin infinite 3s linear;
+}
+
+.nightlight .words {
+  color: black;
+}
+
+.nightlight .ReachBubble {
+  border: 3px #f3f3f3 solid;
+  border-color: black;
+  border-radius: 50%;
+  padding: 50px;
+  /* height */
+  width: 20rem;
+  text-align: center;
 }
 
 /* Custom CSS Start From Here */

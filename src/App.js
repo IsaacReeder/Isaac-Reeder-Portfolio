@@ -203,7 +203,7 @@ class App extends Component {
             <Contact
               lines={[
                 {
-                  contactLines: "Let's make something great!",
+                  contactLines: "Let's make something amazing!",
                   emailAddy: "I.Reeder@Protonmail.ch"
                 }
               ]}

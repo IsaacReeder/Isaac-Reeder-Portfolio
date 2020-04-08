@@ -55,21 +55,23 @@ export default class LandingPage extends Component {
             onClick={this.changeBackgroundBasedonMode}
           >
             <main className="App-main">
-              <h1 className="intro">{devIntro}</h1>
-              <h2> {jobTitle}</h2>
-              <div className="tagline">
-                <Typist>{devDesc}</Typist>
-              </div>
-              <div className="icons-social">
-                {icons.map(icon => (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={`${icon.url}`}
-                  >
-                    <i className={`fab ${icon.image}`} />
-                  </a>
-                ))}
+              <div className="organizer">
+                <h1 className="intro">{devIntro}</h1>
+                <h2 className="jobTitle"> {jobTitle}</h2>
+                <div className="tagline">
+                  <Typist>{devDesc}</Typist>
+                </div>
+                <div className="icons-social">
+                  {icons.map(icon => (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={`${icon.url}`}
+                    >
+                      <i className={`fab ${icon.image}`} />
+                    </a>
+                  ))}
+                </div>
               </div>
             </main>
           </div>

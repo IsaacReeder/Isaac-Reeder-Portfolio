@@ -1,12 +1,8 @@
 import React, { Component } from "react";
-import "./Contact.css";
+import "./Contact.scss";
+import Fade from "../FadeEffect/Fade";
 
-const words = [
-  ["collaborations"],
-  ["new projects"],
-  ["experiences"],
-  ["positions"]
-];
+const words = [["collaborations"], ["new projects"], ["experiences"]];
 
 export default class Contact extends Component {
   constructor(props) {
@@ -36,26 +32,31 @@ export default class Contact extends Component {
     const { lines } = this.props;
 
     return (
-      <React.Fragment>
-        <div className="lines">
-          {lines.map(line => (
-            <h1 className="spacer">
-              {`${line.contactLines}`}
-              <div className="contactContainer">
-                <div className="ReachBubble">reach out</div>
-                <div className="email">{`${line.emailAddy}`}</div>
-              </div>
-            </h1>
-          ))}
-          <div className="rotateCon">
-            <h1 className="forA">For </h1>
-            <h3 classname="great">
-              <u> great </u>
-            </h3>
-            <div className="words">{this.renderPages() || "ideas"}</div>
+      <Fade>
+        <React.Fragment>
+          <div className="lines" id="Contact">
+            {lines.map(line => (
+              <h1 className="spacer">
+                <div class="wordSpacer">{`${line.contactLines}`}</div>
+                <div className="rotateCon">
+                  <div className="forA">Reach out for </div>
+                  <div className="words">
+                    {this.renderPages() || "positions"}.
+                  </div>
+                </div>
+                <div className="contactContainer">
+                  <a
+                    href={`mailto:${line.emailAddy}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="email">{`${line.emailAddy}`}</div>
+                  </a>
+                </div>
+              </h1>
+            ))}
           </div>
-        </div>
-      </React.Fragment>
+        </React.Fragment>
+      </Fade>
     );
   }
 }

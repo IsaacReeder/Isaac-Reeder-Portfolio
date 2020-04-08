@@ -30,7 +30,7 @@ class Nav extends React.Component {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1500}
             >
               Projects
             </Link>
@@ -38,13 +38,13 @@ class Nav extends React.Component {
           <div className="Container3">
             <Link
               activeClass="active"
-              to="ProjectsPage"
+              to="Contact"
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1500}
             >
-              Contact
+              Contact me
             </Link>
           </div>
         </React.Fragment>
