@@ -77,7 +77,7 @@ class App extends Component {
       });
     }
   };
-
+  // color cycle
   changeBackgroundBasedonMode = () => {
     if (
       this.checkIfNightModeEnabled() &&
@@ -131,18 +131,29 @@ class App extends Component {
 
     return (
       <div className={appClass} style={bgStyle}>
-        <div className="change-mode" onClick={this.changeThemeMode} />
+        {/* <div className="change-mode" onClick={this.changeThemeMode} /> */}
         <div className={backgroundMode}>
           <main className="App-main">
-            <Nav
-              changeBackgroundBasedonMode={this.changeBackgroundBasedonMode}
-            />
+            <Nav changeThemeMode={this.changeThemeMode} />
 
             <LandingPage
               devIntro="Hi, I'm Isaac Reeder "
               jobTitle="Hi, I'm Isaac Reeder. A tenacious self-taught software developer, I use continuous iteration to produce results quickly and consistently."
               plainBackgroundMode="daylight"
-              devDesc="ReactJS | JavaScript | MERN | API's "
+              devDesc={[
+                {
+                  tech: "ReactJS"
+                },
+                {
+                  tech1: "JavaScript"
+                },
+                {
+                  tech2: "MERN"
+                },
+                {
+                  tech3: "API's "
+                }
+              ]}
               gradientColors="#EE7752, #E73C7E, #23A6D5, #23D5AB"
               icons={[
                 {

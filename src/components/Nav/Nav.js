@@ -1,11 +1,14 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Nav.scss";
 
 class Nav extends React.Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   render() {
-    var changeBackgroundBasedonMode = this.props.changeBackgroundBasedonMode;
+    var changeThemeMode = this.props.changeThemeMode;
 
     return (
       <CSSTransition
@@ -19,7 +22,8 @@ class Nav extends React.Component {
           <div className="Container">
             <div
               className="smiley"
-              onMouseEnter={() => changeBackgroundBasedonMode()}
+              onMouseEnter={() => changeThemeMode()}
+              onClick={this.scrollToTop}
               src="smiley"
               alt="IsaacReeder.com"
             ></div>

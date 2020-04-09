@@ -16,12 +16,22 @@
   padding-left: 8rem;
 }
 
-.tagline {
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
-  font-weight: 100;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+// .tagline {
+//   font-size: 1.5rem;
+//   margin: 1.5rem 0;
+//   font-weight: 100;
+//   margin-left: 1.5em;
+//   margin-right: 1.5em;
+// }
+
+.test1 {
+  color: red;
+}
+.test2 {
+  color: blue;
+}
+.test3 {
+  color: green;
 }
 
 .intro {
@@ -173,6 +183,8 @@
   max-height: 90%;
   min-width: auto;
   font-family: "Open Sans" sans-serif;
+  margin-bottom: 9rem;
+  margin-top: 9rem;
 }
 
 .nightlight .card:hover {
