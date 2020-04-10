@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.cursor {
+/* .cursor {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -38,7 +38,7 @@
   transition-timing-function: ease-out;
   animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
