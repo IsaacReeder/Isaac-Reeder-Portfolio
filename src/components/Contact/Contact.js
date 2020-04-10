@@ -16,7 +16,7 @@ export default class Contact extends Component {
   };
 
   renderPages = () => {
-    console.log(this.state.index);
+    // console.log(this.state.index);
     return words[this.state.index];
   };
 
@@ -37,7 +37,7 @@ export default class Contact extends Component {
           <div className="lines" id="Contact">
             {lines.map(line => (
               <h1 className="spacer">
-                <div class="wordSpacer">{`${line.contactLines}`}</div>
+                <div className="wordSpacer">{`${line.contactLines}`}</div>
                 <div className="rotateCon">
                   <div className="forA">Reach out for </div>
                   <div className="words">

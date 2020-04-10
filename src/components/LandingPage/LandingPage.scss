@@ -23,15 +23,35 @@
 //   margin-left: 1.5em;
 //   margin-right: 1.5em;
 // }
-
+.techContainer {
+  display: flex;
+  padding-left: 2rem;
+  justify-content: space-between;
+  width: 40rem;
+}
 .test1 {
-  color: red;
+  color: rgb(245, 195, 102);
+  transition: color, 1s, ease;
+  margin-top: -0.00001px;
+  // transition: margin-top, 1s, ease;
 }
 .test2 {
-  color: blue;
+  color: rgb(245, 195, 102);
+  transition: color 1s ease;
+  margin-top: -0.00001px;
+  // transition: margin-top 1s ease;
 }
 .test3 {
-  color: green;
+  color: rgb(245, 195, 102);
+  transition: color 1s ease;
+  margin-top: -0.00001px;
+  // transition: margin-top 1s ease;
+}
+.normal {
+  transition: margin-top 1s ease;
+}
+.spacer {
+  padding-top: -2.5rem;
 }
 
 .intro {

@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Nav from "./components/Nav/Nav";
 import Contact from "./components/Contact/Contact";
+import Test from "./components/LandingPage/Test";
 
 class App extends Component {
   constructor(props) {
@@ -140,20 +141,10 @@ class App extends Component {
               devIntro="Hi, I'm Isaac Reeder "
               jobTitle="Hi, I'm Isaac Reeder. A tenacious self-taught software developer, I use continuous iteration to produce results quickly and consistently."
               plainBackgroundMode="daylight"
-              devDesc={[
-                {
-                  tech: "ReactJS"
-                },
-                {
-                  tech1: "JavaScript"
-                },
-                {
-                  tech2: "MERN"
-                },
-                {
-                  tech3: "API's "
-                }
-              ]}
+              devDesc1="ReactJS"
+              devDesc2="JavaScript"
+              devDesc3="MERN"
+              devDesc4="API's"
               gradientColors="#EE7752, #E73C7E, #23A6D5, #23D5AB"
               icons={[
                 {
@@ -172,7 +163,6 @@ class App extends Component {
               projects={[
                 {
                   pName: "Interactive Chess",
-                  image: require("../src/assets/deep_blue.jpg"),
                   description:
                     "AI interactive chess game, utilizing the Alpha-Beta Algorithm for increased efficiency. ",
                   technologies:
@@ -182,7 +172,7 @@ class App extends Component {
                 },
                 {
                   pName: "Beer-30",
-                  image: require("../src/assets/beer.png"),
+
                   description: "This app helps the user find local breweries.",
                   technologies:
                     "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
@@ -191,7 +181,6 @@ class App extends Component {
                 },
                 {
                   pName: "React Ecommerce",
-                  image: require("../src/assets/cart.jpeg"),
                   description:
                     "E-commerce web application for furniture, and art.",
                   technologies:
@@ -202,7 +191,6 @@ class App extends Component {
                 },
                 {
                   pName: "People and Places",
-                  image: require("../src/assets/thumbsup.png"),
                   description:
                     "A CRUD social media application, built with the MERN stack.",
                   technologies: "ReactJS, NodeJS, Express, MongoDB.",
@@ -219,6 +207,7 @@ class App extends Component {
                 }
               ]}
             />
+            {/* <Test startCount="5" /> */}
           </main>
         </div>
       </div>
