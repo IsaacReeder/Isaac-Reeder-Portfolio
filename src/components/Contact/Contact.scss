@@ -76,3 +76,27 @@
 .a {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 376px) {
+  .lines {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  .forA {
+    text-align: left;
+    // margin-right: 2rem;
+  }
+  .wordSpacer {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .words {
+    padding-left: 0.6rem;
+    text-align: left;
+  }
+  .rotateCon {
+    display: flex;
+
+    margin-left: 4rem;
+  }
+}

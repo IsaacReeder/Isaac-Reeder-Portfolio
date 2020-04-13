@@ -112,6 +112,7 @@ export default class LandingPage extends Component {
                   >
                     .{devDesc2}
                   </h2>
+                  {/* <div className="disappear"> */}
                   <h2
                     className={this.renderPages3() || "normal"}
                     style={
@@ -131,6 +132,7 @@ export default class LandingPage extends Component {
                   </h2>
                   <h2 className={"normal"}>&zwnj;</h2>
                 </div>
+                {/* </div> */}
                 <div className="icons-social">
                   {icons.map(icon => (
                     <a

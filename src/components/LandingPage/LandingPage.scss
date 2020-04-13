@@ -10,11 +10,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   font-family: "Open Sans" sans-serif;
-  // cursor: cell;
 }
 
 .organizer {
   padding-left: 8rem;
+  font-size: calc(10px + 2vmin);
 }
 
 // .tagline {
@@ -64,6 +64,7 @@
 }
 
 .jobTitle {
+  margin-top: 5rem;
   padding-left: 2.1rem;
   width: 70%;
 }
@@ -82,30 +83,6 @@
 
 .redirect {
   cursor: pointer;
-}
-
-@media (min-width: 576px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 992px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
 }
 
 /* Daylight CSS */
@@ -492,6 +469,55 @@
 
 .gradient .icons-social a svg path {
   fill: #fff;
+}
+
+@media only screen and (max-width: 376px) {
+  .techContainer {
+    width: 3rem;
+  }
+  .organizer {
+    padding-left: 4rem;
+    font-size: calc(10px + 2vmin);
+  }
+  .jobTitle {
+    margin-top: 7rem;
+  }
+  .disappear {
+    display: none;
+  }
+  .daylight .card {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .techContainer {
+    display: flex;
+    padding-left: 2rem;
+    justify-content: space-between;
+    width: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 @-webkit-keyframes Gradient {
