@@ -28,30 +28,46 @@ class Nav extends React.Component {
               alt="IsaacReeder.com"
             ></div>
           </div>
-          <div className="Container2">
-            <Link
-              activeClass="active"
-              to="ProjectsPage"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1500}
+          <h3 className="Container2">
+            <CSSTransition
+              in={true}
+              out={true}
+              appear={true}
+              timeout={1000}
+              classNames="fade"
             >
-              Projects
-            </Link>
-          </div>
-          <div className="Container3">
-            <Link
-              activeClass="active"
-              to="Contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1500}
+              <Link
+                activeClass="active"
+                to="ProjectsPage"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                Projects
+              </Link>
+            </CSSTransition>
+          </h3>
+          <h3 className="Container3">
+            <CSSTransition
+              in={true}
+              out={true}
+              appear={true}
+              timeout={1000}
+              classNames="fade"
             >
-              Contact
-            </Link>
-          </div>
+              <Link
+                activeClass="active"
+                to="Contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                Contact
+              </Link>
+            </CSSTransition>
+          </h3>
         </React.Fragment>
       </CSSTransition>
     );

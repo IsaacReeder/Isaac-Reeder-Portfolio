@@ -29,7 +29,7 @@ export default class LandingPage extends Component {
   }
 
   setIndex = () => {
-    let index = this.state.index > words.length ? 0 : this.state.index + 1;
+    // let index = this.state.index > words.length ? 0 : this.state.index + 1;
     var RandomNumber = Math.floor(Math.random() * 3);
     this.setState({ index: RandomNumber });
   };
@@ -76,7 +76,7 @@ export default class LandingPage extends Component {
       icons
     } = this.props;
 
-    let tagLine = this.state.tagLine;
+    // let tagLine = this.state.tagLine;
     return (
       <CSSTransition
         in={true}

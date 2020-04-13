@@ -5,7 +5,6 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import Nav from "./components/Nav/Nav";
 import Contact from "./components/Contact/Contact";
-import Test from "./components/LandingPage/Test";
 
 class App extends Component {
   constructor(props) {
