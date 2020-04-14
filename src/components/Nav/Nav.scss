@@ -96,10 +96,16 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
   .Container {
     top: 2%;
     left: 6%;
+  }
+  .Container2 {
+    left: 6.2rem;
+  }
+  .Container3 {
+    left: 13rem;
   }
 }
 
@@ -109,5 +115,15 @@
   }
   .Container3 {
     left: 13rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .Container2 {
+    left: 6.2rem;
+  }
+  .Container3 {
+    left: 13rem;
+    width: 3rem;
   }
 }

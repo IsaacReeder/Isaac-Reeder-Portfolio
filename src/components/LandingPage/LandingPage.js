@@ -36,22 +36,18 @@ export default class LandingPage extends Component {
 
   renderPages = () => {
     var RandomNumber = Math.floor(Math.random() * 3) + 1;
-    // console.log(this.state.index);
     return words[this.state.index + RandomNumber];
   };
   renderPages2 = () => {
     var RandomNumber = Math.floor(Math.random() * 3) + 1;
-    // console.log(this.state.index);
     return words[this.state.index + RandomNumber];
   };
   renderPages3 = () => {
     var RandomNumber = Math.floor(Math.random() * 3) + 1;
-    // console.log(this.state.index);
     return words[this.state.index + RandomNumber];
   };
   renderPages4 = () => {
     var RandomNumber = Math.floor(Math.random() * 3) + 1;
-    console.log(this.state.index);
     return words[this.state.index + RandomNumber];
   };
 
@@ -112,27 +108,30 @@ export default class LandingPage extends Component {
                   >
                     .{devDesc2}
                   </h2>
-                  {/* <div className="disappear"> */}
-                  <h2
-                    className={this.renderPages3() || "normal"}
-                    style={
-                      ({ width: "2rem" }, { transition: "margin-top 1s ease" })
-                    }
-                  >
-                    .{devDesc3}
-                  </h2>
-                  <h2
-                    className={this.renderPages4() || "normal"}
-                    style={
-                      ({ width: "1.8rem" },
-                      { transition: "margin-top 1s ease" })
-                    }
-                  >
-                    .{devDesc4}
-                  </h2>
+                  <div className="disappear">
+                    <h2
+                      className={this.renderPages3() || "normal"}
+                      style={
+                        ({ width: "2rem" },
+                        { transition: "margin-top 1s ease" })
+                      }
+                    >
+                      .{devDesc3}
+                    </h2>
+                  </div>
+                  <div className="disappear">
+                    <h2
+                      className={this.renderPages4() || "normal"}
+                      style={
+                        ({ width: "1.8rem" },
+                        { transition: "margin-top 1s ease" })
+                      }
+                    >
+                      .{devDesc4}
+                    </h2>
+                  </div>
                   <h2 className={"normal"}>&zwnj;</h2>
                 </div>
-                {/* </div> */}
                 <div className="icons-social">
                   {icons.map(icon => (
                     <a

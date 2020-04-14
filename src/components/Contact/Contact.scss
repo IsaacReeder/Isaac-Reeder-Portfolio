@@ -77,26 +77,99 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 990px) {
+  .forA {
+    text-align: left;
+    // margin-right: 2rem;
+    margin-left: 0rem;
+    width: 90%;
+    display: none;
+  }
+  .words {
+    padding-left: 0rem;
+    text-align: left;
+    width: 80%;
+  }
+  .contactContainer {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+}
+
+@media only screen and (max-width: 415px) {
   .lines {
     padding-top: 5rem;
     padding-bottom: 10rem;
+    width: 70%;
+    padding-left: 1rem;
   }
   .forA {
     text-align: left;
     // margin-right: 2rem;
+    margin-left: 0rem;
+    width: 90%;
+    display: none;
   }
   .wordSpacer {
-    margin-left: 1rem;
+    margin-left: 0rem;
     margin-bottom: 1rem;
   }
   .words {
-    padding-left: 0.6rem;
+    padding-left: 0rem;
     text-align: left;
   }
   .rotateCon {
     display: flex;
 
-    margin-left: 4rem;
+    margin-left: 0rem;
+  }
+  .contactContainer {
+    display: flex;
+    padding-left: 0rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    text-align: left;
+
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .lines {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    width: 70%;
+    padding-left: 1rem;
+  }
+  .forA {
+    text-align: left;
+    // margin-right: 2rem;
+    margin-left: 0rem;
+    width: 90%;
+    display: none;
+  }
+  .wordSpacer {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+  .words {
+    padding-left: 0rem;
+    text-align: left;
+  }
+  .rotateCon {
+    display: flex;
+
+    margin-left: 0rem;
+  }
+  .contactContainer {
+    display: flex;
+    padding-left: 0rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    text-align: left;
+
+    font-size: 8vw;
   }
 }
