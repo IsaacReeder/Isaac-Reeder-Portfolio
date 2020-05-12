@@ -17,13 +17,6 @@
   font-size: calc(10px + 2vmin);
 }
 
-// .tagline {
-//   font-size: 1.5rem;
-//   margin: 1.5rem 0;
-//   font-weight: 100;
-//   margin-left: 1.5em;
-//   margin-right: 1.5em;
-// }
 .techContainer {
   display: flex;
   padding-left: 2rem;
@@ -106,24 +99,6 @@
 .daylight .icons-social a svg path {
   fill: #fafafa;
 }
-.daylight .card {
-  flex: 1;
-  margin: 1rem;
-  border: 3px #f3f3f3 solid;
-  border-radius: 1%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s linear;
-  cursor: pointer;
-  background-color: #a8a4a4;
-  text-align: left;
-  padding: 0.5rem;
-  min-height: 30%;
-  max-height: 90%;
-  min-width: auto;
-  font-family: "Open Sans" sans-serif;
-  margin-bottom: 9rem;
-  margin-top: 9rem;
-}
 
 .daylight .card:hover {
   background-color: rgb(133, 182, 194);
@@ -145,7 +120,6 @@
 }
 
 .daylight .email {
-  // padding-left: 3rem;
   padding-bottom: 1rem;
   text-align: center;
   color: white;
@@ -181,25 +155,6 @@
   fill: #000;
 }
 
-.nightlight .card {
-  flex: 1;
-  margin: 1rem;
-  border: 3px #030000 solid;
-  border-radius: 1%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s linear;
-  cursor: pointer;
-  background-color: #e2dada;
-  text-align: left;
-  padding: 0.5rem;
-  min-height: 30%;
-  max-height: 90%;
-  min-width: auto;
-  font-family: "Open Sans" sans-serif;
-  margin-bottom: 9rem;
-  margin-top: 9rem;
-}
-
 .nightlight .card:hover {
   background-color: rgb(155, 221, 144);
   border-color: #f3f3f3;
@@ -227,13 +182,11 @@
   border-color: black;
   border-radius: 50%;
   padding: 50px;
-  /* height */
   width: 20rem;
   text-align: center;
 }
 
 .nightlight .email {
-  // padding-left: 3rem;
   padding-bottom: 1rem;
   text-align: center;
   color: black;
@@ -670,24 +623,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* Full Page Background Image CSS */
-
-// .full-bg-image {
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
-
-// .full-bg-image .App-main {
-//   color: #fff;
-// }
-
-// .full-bg-image .icons-social a {
-//   color: #fff;
-// }
-
-// .full-bg-image .icons-social a svg path {
-//   fill: #fff;
-// }

@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import "./App.css";
 
 import LandingPage from "./components/LandingPage/LandingPage";
-import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
+import Projects from "./components/ProjectsPage/Projects/Projects";
+import Backdrop from "./components/ProjectsPage/Backdrop/Backdrop";
+import SideDrawer from "./components/ProjectsPage/SideDrawer/SideDrawer";
+import SideDrawer2 from "./components/ProjectsPage/SideDrawer/SideDrawer2";
+import SideDrawer3 from "./components/ProjectsPage/SideDrawer/SideDrawer3";
+import SideDrawer4 from "./components/ProjectsPage/SideDrawer/SideDrawer4";
 import Nav from "./components/Nav/Nav";
 import Contact from "./components/Contact/Contact";
 
@@ -27,6 +32,11 @@ class App extends Component {
         "lightblue",
         "lightyellow"
       ],
+      sideDrawerOpen: false,
+      sideDrawerOpen2: false,
+      sideDrawerOpen3: false,
+      sideDrawerOpen4: false,
+      scrolled: false,
       backgroundType: this.props.backgroundType || "plain",
       appClass: this.props.plainBackgroundMode || "daylight",
       devIntro: this.props.devIntro || "Lorem Ipsum",
@@ -38,6 +48,35 @@ class App extends Component {
       bgStyle: {},
       icons: this.props.icons || []
     };
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      // eslint-disable-next-line no-restricted-globals
+      const isTop = scrollY < 100;
+      if (isTop !== true) {
+        // eslint-disable-next-line no-restricted-globals
+        this.setState({
+          sideDrawerOpen: false,
+          sideDrawerOpen2: false,
+          sideDrawerOpen3: false,
+          sideDrawerOpen4: false,
+          scrolled: true
+        });
+      } else {
+        this.setState({
+          sideDrawerOpen: false,
+          sideDrawerOpen2: false,
+          sideDrawerOpen3: false,
+          sideDrawerOpen4: false,
+          scrolled: false
+        });
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll");
   }
 
   checkIfNightModeEnabled = () => {
@@ -125,8 +164,46 @@ class App extends Component {
       </div>
     );
   }
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+  drawerToggleClickHandler2 = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen2: !prevState.sideDrawerOpen2 };
+    });
+  };
+  drawerToggleClickHandler3 = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen3: !prevState.sideDrawerOpen3 };
+    });
+  };
+  drawerToggleClickHandler4 = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen4: !prevState.sideDrawerOpen4 };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({
+      sideDrawerOpen: false,
+      sideDrawerOpen2: false,
+      sideDrawerOpen3: false,
+      sideDrawerOpen4: false
+    });
+  };
 
   render() {
+    let backdrop;
+    if (
+      this.state.sideDrawerOpen ||
+      this.state.sideDrawerOpen2 ||
+      this.state.sideDrawerOpen3 ||
+      this.state.sideDrawerOpen4
+    ) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
     const { appClass, bgStyle, backgroundMode } = this.state;
 
     return (
@@ -156,9 +233,15 @@ class App extends Component {
                 }
               ]}
             />
-
-            <ProjectsPage
+            <Projects
               id="ProjectsPage"
+              drawerClickHandler={this.drawerToggleClickHandler}
+              drawerClickHandler2={this.drawerToggleClickHandler2}
+              drawerClickHandler3={this.drawerToggleClickHandler3}
+              drawerClickHandler4={this.drawerToggleClickHandler4}
+            />
+            <SideDrawer
+              show={this.state.sideDrawerOpen}
               projects={[
                 {
                   pName: "Interactive Chess",
@@ -168,16 +251,25 @@ class App extends Component {
                     "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu",
                   image2: "fa-github",
                   url: "https://github.com/IsaacReeder/FunctionalChess"
-                },
+                }
+              ]}
+            />
+            <SideDrawer2
+              show={this.state.sideDrawerOpen2}
+              projects={[
                 {
                   pName: "Beer-30",
-
                   description: "This app helps the user find local breweries.",
                   technologies:
                     "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
                   image2: "fa-github",
                   url: "https://github.com/IsaacReeder/Beer-30"
-                },
+                }
+              ]}
+            />
+            <SideDrawer3
+              show={this.state.sideDrawerOpen3}
+              projects={[
                 {
                   pName: "React Ecommerce",
                   description:
@@ -187,7 +279,12 @@ class App extends Component {
                   image2: "fa-github",
                   url:
                     "https://github.com/IsaacReeder/React-Strapi-MongoDB-Ecommerce-v2"
-                },
+                }
+              ]}
+            />
+            <SideDrawer4
+              show={this.state.sideDrawerOpen4}
+              projects={[
                 {
                   pName: "People and Places",
                   description:
@@ -198,6 +295,7 @@ class App extends Component {
                 }
               ]}
             />
+            {backdrop}
             <Contact
               lines={[
                 {
@@ -206,7 +304,6 @@ class App extends Component {
                 }
               ]}
             />
-            {/* <Test startCount="5" /> */}
           </main>
         </div>
       </div>

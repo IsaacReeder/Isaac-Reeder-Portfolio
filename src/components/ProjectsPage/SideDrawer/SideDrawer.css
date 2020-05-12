@@ -1,0 +1,77 @@
+.daylight .side-drawer {
+  height: 100%;
+  background: rgb(56, 55, 55);
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  max-width: 40%;
+  z-index: 200;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+  border-radius: 1%;
+}
+
+.nightlight .side-drawer {
+  height: 100%;
+  background: rgb(248, 227, 199);
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  max-width: 40%;
+  z-index: 200;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+  border-radius: 1%;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.side-drawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-drawer li {
+  margin: 0.5rem 0;
+}
+
+.icons-social i {
+  padding: 10px;
+  font-size: 2em;
+  padding-left: 2.1rem;
+}
+
+.side-drawer a:hover, .side-drawer a:active {
+  color: #fa923f;
+}
+
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20%;
+}
+
+.boxs {
+  padding: 2%;
+  padding-left: 12%;
+  padding-right: 12%;
+  display: flex;
+  align-content: center;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media (min-width: 769px) {
+  .side-drawer {
+    /* display: none; */
+  }
+}

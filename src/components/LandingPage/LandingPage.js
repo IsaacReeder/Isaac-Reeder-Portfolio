@@ -22,7 +22,6 @@ export default class LandingPage extends Component {
       return <Redirect to="/projects" />;
     }
   };
-  ////////////////////
   constructor(props) {
     super(props);
     this.state = { index: -1 };
@@ -72,7 +71,6 @@ export default class LandingPage extends Component {
       icons
     } = this.props;
 
-    // let tagLine = this.state.tagLine;
     return (
       <CSSTransition
         in={true}

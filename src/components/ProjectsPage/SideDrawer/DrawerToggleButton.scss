@@ -1,0 +1,74 @@
+.nightlight .toggle-button {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: left;
+  justify-content: center;
+  padding-left: 10rem;
+  transition: 0.25s ease;
+  &:hover {
+    letter-spacing: 1.5px;
+    transition: letter-spacing 0.25s ease-in;
+  }
+}
+
+.daylight .toggle-button {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: left;
+  justify-content: center;
+  padding-left: 10rem;
+  transition: 0.25s ease;
+  &:hover {
+    letter-spacing: 1.5px;
+    transition: letter-spacing 0.25s ease-in;
+  }
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__line {
+  width: 30px;
+  height: 2px;
+  background: white;
+}
+
+.nightlight .button-spacer {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  border-bottom: 2px solid black;
+}
+
+.daylight .button-spacer {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  border-bottom: 2px solid white;
+}
+
+// .titles {
+//   max-width: 50%;
+// }
+
+@media only screen and (max-width: 570px) {
+  .daylight .toggle-button {
+    padding-left: 2rem;
+    font-size: calc(10px + 2vmin);
+  }
+  .nightlight .toggle-button {
+    padding-left: 2rem;
+    font-size: calc(10px + 2vmin);
+  }
+}
