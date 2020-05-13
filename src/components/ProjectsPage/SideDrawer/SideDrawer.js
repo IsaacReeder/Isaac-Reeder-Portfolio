@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SideDrawer.css";
 
-const sideDrawer = ({ projects, show }) => {
+const sideDrawer = ({ projects, show, click }) => {
   let drawerClasses = "side-drawer";
   if (show) {
     drawerClasses = "side-drawer open";
@@ -10,7 +10,6 @@ const sideDrawer = ({ projects, show }) => {
 
   return (
     <div className={drawerClasses}>
-      {/* <button className="x">X</button> */}
       {projects.map(project => (
         <div target="_blank" rel="noopener noreferrer">
           <div className="drawer-container">

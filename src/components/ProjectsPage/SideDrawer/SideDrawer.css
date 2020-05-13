@@ -70,6 +70,11 @@
   vertical-align: middle;
 }
 
+.closer {
+  background: transparent;
+  border: transparent;
+}
+
 @media (min-width: 769px) {
   .side-drawer {
     /* display: none; */

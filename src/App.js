@@ -241,6 +241,7 @@ class App extends Component {
               drawerClickHandler4={this.drawerToggleClickHandler4}
             />
             <SideDrawer
+              click={this.backdropClickHandler}
               show={this.state.sideDrawerOpen}
               projects={[
                 {
@@ -250,6 +251,7 @@ class App extends Component {
                   technologies:
                     "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu",
                   image2: "fa-github",
+                  closeButton: "fa-arrow-circle-right",
                   url: "https://github.com/IsaacReeder/FunctionalChess"
                 }
               ]}
@@ -263,6 +265,7 @@ class App extends Component {
                   technologies:
                     "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
                   image2: "fa-github",
+                  closeButton: "fa-arrow-circle-right",
                   url: "https://github.com/IsaacReeder/Beer-30"
                 }
               ]}
@@ -277,6 +280,7 @@ class App extends Component {
                   technologies:
                     "React, Strapi headless CMS, MongoDB, GraphQL, SendGrid, Gestalt(Pinterest Library), API's, and MVC.",
                   image2: "fa-github",
+                  closeButton: "fa-arrow-circle-right",
                   url:
                     "https://github.com/IsaacReeder/React-Strapi-MongoDB-Ecommerce-v2"
                 }
@@ -291,6 +295,7 @@ class App extends Component {
                     "A CRUD social media application, built with the MERN stack.",
                   technologies: "ReactJS, NodeJS, Express, MongoDB.",
                   image2: "fa-github",
+                  closeButton: "fa-arrow-circle-right",
                   url: "https://github.com/IsaacReeder/people-and-places"
                 }
               ]}

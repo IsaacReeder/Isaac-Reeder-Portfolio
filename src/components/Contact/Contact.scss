@@ -1,9 +1,5 @@
 .ReachBubble {
-  // border: 3px #f3f3f3 solid;
-  // border-color: white;
-  // border-radius: 50%;
   padding: 50px;
-  /* height */
   width: 25rem;
   text-align: center;
 }
@@ -17,7 +13,6 @@
 
 .rotateCon {
   display: flex;
-  /* padding: 2rem; */
   margin-left: 4rem;
 }
 
@@ -26,29 +21,7 @@
   padding-bottom: 15rem;
 }
 
-// .spacer {
-//   padding-left: 15rem;
-// }
-
-// .email {
-//   // padding-left: 3rem;
-//   padding-bottom: 1rem;
-//   text-align: center;
-//   color: white;
-
-//   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-//   background-repeat: no-repeat;
-//   background-size: 100% 0.2em;
-//   background-position: 0 88%;
-//   transition: background-size 0.25s ease-in;
-//   &:hover {
-//     background-size: 100% 88%;
-//   }
-// }
-
 .forA {
-  // padding-bottom: 2rem;
-  // padding-right: 2rem;
   text-align: center;
 }
 
@@ -59,18 +32,13 @@
 
 .words {
   width: 40%;
-  // padding-bottom: 3rem;
   padding-left: 0.6rem;
-  // text-align: center;
-  // font-size: 100px;
   text-align: left;
 }
 
 .wordSpacer {
   margin-left: 4rem;
   margin-bottom: 0.2rem;
-
-  // word-spacing: 2rem;
 }
 
 .a {
@@ -80,7 +48,6 @@
 @media only screen and (max-width: 990px) {
   .forA {
     text-align: left;
-    // margin-right: 2rem;
     margin-left: 0rem;
     width: 90%;
     display: none;
