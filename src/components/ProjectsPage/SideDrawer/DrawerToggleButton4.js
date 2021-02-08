@@ -2,10 +2,10 @@ import React from "react";
 
 import "./DrawerToggleButton.scss";
 
-const drawerToggleButton = props => (
+const drawerToggleButton = (props) => (
   <div className="button-spacer">
     <div className="toggle-button" onClick={props.click}>
-      <h1>People and Places</h1>
+      <h1>Welp</h1>
     </div>
   </div>
 );

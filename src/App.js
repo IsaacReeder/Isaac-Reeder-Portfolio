@@ -19,18 +19,18 @@ class App extends Component {
         "day",
         "terminal",
         "torquoise",
-        "alizarin",
-        "amythyst",
-        "carrot",
-        "peterriver"
+        // "alizarin",
+        // "amythyst",
+        // "carrot",
+        // "peterriver",
       ],
       lightBackgroundModes: [
         "night",
         "lightred",
         "lightpurple",
-        "lightgreen",
-        "lightblue",
-        "lightyellow"
+        // "lightgreen",
+        // "lightblue",
+        // "lightyellow",
       ],
       sideDrawerOpen: false,
       sideDrawerOpen2: false,
@@ -46,7 +46,7 @@ class App extends Component {
       backgroundMode: "default",
       backgroundIndex: 0,
       bgStyle: {},
-      icons: this.props.icons || []
+      icons: this.props.icons || [],
     };
   }
 
@@ -61,7 +61,7 @@ class App extends Component {
           sideDrawerOpen2: false,
           sideDrawerOpen3: false,
           sideDrawerOpen4: false,
-          scrolled: true
+          scrolled: true,
         });
       } else {
         this.setState({
@@ -69,7 +69,7 @@ class App extends Component {
           sideDrawerOpen2: false,
           sideDrawerOpen3: false,
           sideDrawerOpen4: false,
-          scrolled: false
+          scrolled: false,
         });
       }
     });
@@ -101,18 +101,18 @@ class App extends Component {
     }
   };
 
-  changeThemeMode = e => {
+  changeThemeMode = (e) => {
     if (this.checkIfNightModeEnabled()) {
       this.setState({
         appClass: "daylight",
         backgroundIndex: 0,
-        backgroundMode: this.state.darkBackgroundModes[0]
+        backgroundMode: this.state.darkBackgroundModes[0],
       });
     } else if (this.checkIfDayModeEnabled()) {
       this.setState({
         appClass: "nightlight",
         backgroundIndex: 0,
-        backgroundMode: this.state.lightBackgroundModes[0]
+        backgroundMode: this.state.lightBackgroundModes[0],
       });
     }
   };
@@ -126,7 +126,7 @@ class App extends Component {
         backgroundIndex: this.state.backgroundIndex + 1,
         backgroundMode: this.state.lightBackgroundModes[
           this.state.backgroundIndex + 1
-        ]
+        ],
       });
     } else if (
       this.checkIfDayModeEnabled() &&
@@ -136,12 +136,12 @@ class App extends Component {
         backgroundIndex: this.state.backgroundIndex + 1,
         backgroundMode: this.state.darkBackgroundModes[
           this.state.backgroundIndex + 1
-        ]
+        ],
       });
     } else {
       this.setState({
         backgroundIndex: 0,
-        backgroundMode: this.getDefaultModeBasedOnBackgroundType()
+        backgroundMode: this.getDefaultModeBasedOnBackgroundType(),
       });
     }
   };
@@ -150,8 +150,8 @@ class App extends Component {
     const [isVisible, setVisible] = React.useState(false);
     const domRef = React.useRef();
     React.useEffect(() => {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => setVisible(entry.isIntersecting));
       });
       observer.observe(domRef.current);
     }, []);
@@ -165,22 +165,22 @@ class App extends Component {
     );
   }
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
   drawerToggleClickHandler2 = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen2: !prevState.sideDrawerOpen2 };
     });
   };
   drawerToggleClickHandler3 = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen3: !prevState.sideDrawerOpen3 };
     });
   };
   drawerToggleClickHandler4 = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen4: !prevState.sideDrawerOpen4 };
     });
   };
@@ -190,7 +190,7 @@ class App extends Component {
       sideDrawerOpen: false,
       sideDrawerOpen2: false,
       sideDrawerOpen3: false,
-      sideDrawerOpen4: false
+      sideDrawerOpen4: false,
     });
   };
 
@@ -220,20 +220,20 @@ class App extends Component {
               devIntro="Hi, I'm Isaac Reeder "
               jobTitle="Hi, I'm Isaac Reeder. A tenacious self-taught software developer, I use continuous iteration to produce results quickly and consistently."
               plainBackgroundMode="daylight"
-              devDesc1="ReactJS"
-              devDesc2="JavaScript"
-              devDesc3="MERN"
+              devDesc1="JavaScript"
+              devDesc2="NodeJS"
+              devDesc3="MongoDB"
               devDesc4="API's"
               gradientColors="#EE7752, #E73C7E, #23A6D5, #23D5AB"
               icons={[
                 {
                   image: "fa-github",
-                  url: "https://github.com/IsaacReeder"
+                  url: "https://github.com/IsaacReeder",
                 },
                 {
                   image: "fa-linkedin",
-                  url: "https://www.linkedin.com/in/isaac-reeder/"
-                }
+                  url: "https://www.linkedin.com/in/isaac-reeder/",
+                },
               ]}
             />
             <Projects
@@ -255,22 +255,23 @@ class App extends Component {
                     "Java, J-Commander, Google Protocol Buffers, GRPC, and JAVA Multicore API., VIM, Byobu",
                   image2: "fa-github",
                   closeButton: "fa-arrow-circle-right",
-                  url: "https://github.com/IsaacReeder/FunctionalChess"
-                }
+                  url: "https://github.com/IsaacReeder/FunctionalChess",
+                },
               ]}
             />
             <SideDrawer2
               show={this.state.sideDrawerOpen2}
               projects={[
                 {
-                  pName: "Beer-30",
-                  description: "This app helps the user find local breweries.",
+                  pName: "Voting Application",
+                  description:
+                    "A CRUD social media application, built with the MERN stack.",
                   technologies:
-                    "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
+                    "NodeJS, Mongoose, Express, and Cors. Front end technologies include Axios, Moment-Timezone, Bootstrap, and shortId.",
                   image2: "fa-github",
                   closeButton: "fa-arrow-circle-right",
-                  url: "https://github.com/IsaacReeder/Beer-30"
-                }
+                  url: "https://github.com/IsaacReeder/Voting-Application",
+                },
               ]}
             />
             <SideDrawer3
@@ -285,22 +286,23 @@ class App extends Component {
                   image2: "fa-github",
                   closeButton: "fa-arrow-circle-right",
                   url:
-                    "https://github.com/IsaacReeder/React-Strapi-MongoDB-Ecommerce-v2"
-                }
+                    "https://github.com/IsaacReeder/React-Strapi-MongoDB-Ecommerce-v2",
+                },
               ]}
             />
             <SideDrawer4
               show={this.state.sideDrawerOpen4}
               projects={[
                 {
-                  pName: "People and Places",
+                  pName: "Welp",
                   description:
-                    "A CRUD social media application, built with the MERN stack.",
-                  technologies: "ReactJS, NodeJS, Express, MongoDB.",
+                    "A Yelp clone specifically created to find local breweries.",
+                  technologies:
+                    "ReactJS, Yelp CORS API's, Axios, OpenWeatherMap, OwFont, WebFontLoader, Node-Sass, and Heroku CRUD API",
                   image2: "fa-github",
                   closeButton: "fa-arrow-circle-right",
-                  url: "https://github.com/IsaacReeder/people-and-places"
-                }
+                  url: "https://github.com/IsaacReeder/Beer-30",
+                },
               ]}
             />
             {backdrop}
@@ -308,8 +310,8 @@ class App extends Component {
               lines={[
                 {
                   contactLines: "Let's make something amazing.",
-                  emailAddy: "i.reeder@protonmail.ch"
-                }
+                  emailAddy: "i.reeder@protonmail.ch",
+                },
               ]}
             />
           </main>

@@ -10,10 +10,9 @@ const sideDrawer = ({ projects, show, click }) => {
 
   return (
     <div className={drawerClasses}>
-      {projects.map(project => (
+      {projects.map((project) => (
         <div target="_blank" rel="noopener noreferrer">
           <div className="drawer-container">
-            <h4>Project: </h4>
             <h1 className="boxs"> {`${project.pName}`}</h1>
             <div className="boxs"> {`${project.description}`}</div>
             <div className="boxs"> {`${project.technologies}`}</div>
